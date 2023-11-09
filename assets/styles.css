@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container-traffic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: black;
+    padding: 3rem;
+    border-radius: 1rem;
+    width: max-content;
+    margin-top: 3rem;
+}
+
+.fade-in-box {
+    width: 200px;
+    height: 200px;
+    background-color:red;
+    border-radius: 100%;
+    /* refers to the keyframe name */
+    animation-name: fadeIn;
+    /* how long it will take to complete the animation */
+    animation-duration: 3s;
+    /* start slow then fast then end slow */
+    animation-timing-function: ease-in-out;
+    /* Makes the animiation repeat over and over */
+    animation-iteration-count:inherit;
+}
+
+.yellow-light {
+    width: 200px;
+    height: 200px;
+    background-color:yellow;
+    border-radius: 100%;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+}
+
+.green-light {
+    width: 200px;
+    height: 200px;
+    background-color:green;
+    border-radius: 100%;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from {opacity: 0
+    }
+    to {opacity: 1
+    }
+}
